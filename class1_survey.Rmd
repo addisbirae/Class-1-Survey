@@ -146,3 +146,8 @@ proportion of students who like both cats and dogs
 ```{r}
 mean(C1survey$like_cats == "Yes" & C1survey$like_dogs == "Yes", na.rm = TRUE)
 ```
+
+```{r}
+write.csv(C1survey, file = "Cleaned_C1survey.csv", row.names = FALSE)
+```
+
